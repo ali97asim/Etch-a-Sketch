@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+    height: 640px;
+    border: 2px solid black;
+}
+.box{
+     flex: 0 0 calc(100% / 16);
+  height: calc(100% / 16);
+    border: 1px solid black;
+    transition: background-color 0.5s ease;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.color{
+    background-color: rebeccapurple;
+}
