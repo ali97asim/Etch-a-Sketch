@@ -27,9 +27,7 @@ body{
     border: 1px solid black;
 }
 
-.hovered{
-    background-color: blueviolet;
-}
+
 button{
     margin-top: 20px;
     padding: 12px 16px;

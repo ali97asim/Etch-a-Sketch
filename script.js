@@ -29,7 +29,8 @@ button.addEventListener("click",(e)=>{
 
 container.addEventListener("mouseover",(e)=>{
     if(e.target.classList.contains("box")){
-        e.target.classList.add("hovered")
+        e.target.style.backgroundColor=`rgb(${Math.random()*256},${Math.random()*256},${Math.random()*256})`
+
     }
 })
 
