@@ -1,6 +1,6 @@
 const container=document.querySelector(".container");
-let gridSize=16;
 const button=document.querySelector("button");
+let gridSize=16;
 
 const setGrid=()=>{
     container.textContent=""
@@ -30,7 +30,15 @@ button.addEventListener("click",(e)=>{
 container.addEventListener("mouseover",(e)=>{
     if(e.target.classList.contains("box")){
         e.target.style.backgroundColor=`rgb(${Math.random()*256},${Math.random()*256},${Math.random()*256})`
+        let opac=parseFloat(e.target.style.opacity) || 0;
+        if(opac<1){
+            opac+=0.1
+            e.target.style.opacity = opac;
 
+        }
+        console.log(opac)
+        e.target.style.opacity=opac
+        console.log(e.target.style.opacity)
     }
 })
 
